@@ -1444,31 +1444,31 @@ label {
   .login__forms1{
     width: 600px;
     justify-self: center;
-    height: 360px;
+    height: 600px;
   }
 
   .login__forms2{
     width: 600px;
     justify-self: center;
-    height: 360px;
+    height: 600px;
   }
 
   .login__forms3{
     width: 600px;
     justify-self: center;
-    height: 360px;
+    height: 600px;
   }
 
   .login__forms4{
     width: 600px;
     justify-self: center;
-    height: 360px;
+    height: 600px;
   }
 
   .login__forms5{
     width: 600px;
     justify-self: center;
-    height: 360px;
+    height: 600px;
   }
 }
 
@@ -1511,7 +1511,7 @@ label {
   }
 
   .login__registre{
-    bottom: -8rem;
+    
   }
 
   .login__create{
