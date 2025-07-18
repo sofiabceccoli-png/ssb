@@ -16,8 +16,7 @@
         <!--=============== CSS ===============-->
         <link rel="stylesheet" href="assets/css/styles.css">
 
-        <title>Sumalo sin Barreras 1</title>
-
+        <title>Sumalo sin Barreras 2</title>
     </head>
     <body>
 
@@ -83,42 +82,71 @@
                         </div>    
                     </div>                
 
-                    <div class="login__forms1">
+                    <div class="login__forms3">
                         <form method="POST" action="" class="login__registre" id="login-in" >
                             <div>
-                                <h2 class="login__title">¡Registrate, invitá a tus amigos y sumá beneficios!</h2>
-                                <p style="text-align: left; font-size: 14px; font-weight: 500;">Luego de completar el formulario accederás a un link exclusivo para invitar a tus amigos.</p>
+                                <h2 class="login__title">¡Hola [Nombre Referente]!<br>Sumá sin barreras a tus amigos:</h2>
                             </div>
-                        
-                            <div class="form-grid">                        
-                                <div class="login__box">
-                                <input type="text" placeholder="Nombre" class="login__input">
+
+                            <div class="login__double">
+                            <a href="#" class="login__button-2" data-toggle="modal" data-target="#modalInvitar"><i class="ri-mail-line button__icon"></i>Invitar por email</a>
+                            <a href="#" class="login__button-2"><i class="ri-whatsapp-line button__icon"></i>Invitar por WhatsApp</a>
+                            </div>
+
+                            <section class="table__body">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Tu amigo</th>
+                                            <th>Patente</th>
+                                            <th>¿Ya saco su TelePASE?</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+											<td colspan="4" class="text-center" style="padding-bottom: 16rem; padding-top: 1rem;">Aún no hay referidos cargados.</td>
+										</tr>      
+                                    </tbody>
+                                </table>
+
+                                <!-- Modal para invitar por mail -->
+                                <div class="modal fade" id="modalInvitar" tabindex="-1" role="dialog" aria-labelledby="modalInvitarLabel" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                    <form action="https://ssb.aupago.com/invitacion-contacto" method="POST">
+                                        <input type="hidden" name="_token" value="WYbGRMP3gwNINn6xfSTM9LV4VXyNgWEUYOf8VYo4">		<input type="hidden" name="rfc_referente_id" value="20">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="modalInvitarLabel"><i class="ri-mail-line button__icon"></i>Invitar por email</h5>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+
+                                                <div class="modal-body">
+                                                    <div class="form-group">
+                                                        <label for="nombre_invitado">Nombre</label>
+                                                        <input type="text" name="nombre_invitado" class="form-control" required>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="email_invitado">Email</label>
+                                                        <input type="email" name="email_invitado" class="form-control" required>
+                                                    </div>
+                                                </div>
+
+                                                <div class="modal-footer">
+                                                    <button type="submit" class="login__button-2">Enviar invitación</button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
                                 </div>
 
-                                <div class="login__box">
-                                    <input type="text" placeholder="Apellido" class="login__input">
-                                </div>
-
-                                <div class="login__box">
-                                    <input type="email" placeholder="Email" class="login__input">
-                                </div>
-
-                                <div class="login__box">
-                                    <input type="text" placeholder="Telefono" class="login__input">
-                                </div>
-
-                                <div class="login__box">
-                                    <input type="text" placeholder="DNI" class="login__input">
-                                </div>
-
-                                <div class="login__box">
-                                    <input type="text" placeholder="Patente" class="login__input">
-                                </div>   
-                            </div>                             
-                            <div class="login__recaptcha">
-                                    <div class="g-recaptcha" data-sitekey="6LekU3orAAAAAByrxJ-7Ts_TABLagMVFfArE8ceL" data-size="normal" data-theme="light" id="recaptcha-element"></div>
-                                </div>
-                            <button type="submit" class="login__button">Registrarme</button>                          
+                            </section>                             
+                            
+                            <div class="login__message">
+                                <span>¡Tu invitación fue enviada!</span>
+                            </div>
+                                                
                         </form>
                     </div>
                 </div>
@@ -133,18 +161,31 @@
                        ¿Ya usás TelePASE? ¡Entonces podés invitar a tus amigos a sumarse con vos!
                     </h2>
 
-                     <p class="about__description">
+                   <div class="steps__container grid">
+                        <div class="steps__card">
+                            <img src="assets/img/steps-1.png" alt="">
+                            <h3 class="steps__card-title">¿Cómo participo?</h3>
+                            <p class="steps__card-description">
+                                Entrá a la plataforma <strong>"Súmalo sin Barreras"</strong>, registrate y generá tu link personal. Se lo mandás a tus amigos por WhatsApp o por mail, y cuando ellos se anoten en ese link y se adhieran a TelePASE, <strong>ambos ganan</strong>.
+                            </p>
+                        </div>
 
-                            Entrá a la plataforma <strong>"Súmalo sin Barreras"</strong>, registrate y generá tu link personal. Se lo mandás a tus amigos por WhatsApp o por mail, y cuando ellos se anoten en ese link y se adhieran a TelePASE, <strong>ambos ganan</strong>.
-                            <br><br>
-                            ¿Qué ganan? Un <strong>20% de descuento</strong> (hasta $4.000) para usar en autopistas AUSA durante los próximos 3 meses. ¡Y si invitás a varios, podés juntar hasta 5 descuentos!
-                            Además, tu amigo se lleva <strong>el envío del TAG gratis por correo</strong>.
-                            <br><br>
-                            Eso sí: solo sirve si tu amigo <strong>todavía no tiene TelePASE</strong>. Si ya está en el sistema, no aplica el beneficio.
-                            <br><br>
-                            Así que ya sabés: mandales el link, que se adhieran, y empiecen a disfrutar de pasar sin barreras y con descuento. 🚗💨
+                        <div class="steps__card">
+                            <img src="assets/img/steps-2.png" alt="">
+                            <h3 class="steps__card-title">¿Cuales son los beneficios?</h3>
+                            <p class="steps__card-description">
+                                Un <strong>20% de descuento</strong> (hasta $4.000) para usar en autopistas AUSA durante los próximos 3 meses. ¡Y si invitás a varios, podés juntar hasta 5 descuentos! Además, tu amigo se lleva <strong>el envío del TAG gratis por correo</strong>.
+                            </p>
+                        </div>
 
-                    </p>
+                        <div class="steps__card">
+                            <img src="assets/img/steps-3.png" alt="">
+                            <h3 class="steps__card-title">¿Hay alguna restricción?</h3>
+                            <p class="steps__card-description">
+                                Esta promo <strong>solo sirve si tu amigo todavía no tiene TelePASE</strong>. Si ya está en el sistema, no aplica el beneficio. Así que ya sabés: mandales el link, que se adhieran, y empiecen a disfrutar de pasar sin barreras y con descuento.
+                            </p>
+                        </div>
+                    </div>
 
                 </div>
 
@@ -331,7 +372,6 @@
         
         <!--=============== MAIN JS ===============-->
         <script src="assets/js/main.js"></script>
-        
 
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
